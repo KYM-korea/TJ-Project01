@@ -20,7 +20,7 @@ public class test_TbyT {
 				arr[i][j] = Integer.toString(input_num);
 			}
 		}
-		arr[2][2]="X";
+		arr[arr.length-1][arr.length-1]="X";
 	}
 	
 	public void show_map() {
