@@ -6,15 +6,15 @@ import java.util.Scanner;
 public class TbyT_Game {
 	
 	ArrayList<String> arr = new ArrayList<String>();
-	int ch_index, suffle = 3;
+	int ch_index, suffle = 50;
 	
 	public TbyT_Game(int diff) {
 		int c=9;
-//		switch(diff) {
-//		case 1:c = 9;break;
-//		case 2:c = 16;break;
-//		case 3:c = 25;break;
-//		}
+		switch(diff) {
+		case 1:c = 9;break;
+		case 2:c = 16;break;
+		case 3:c = 25;break;
+		}
 		for(int i = 1 ; i <= c ; i++) {
 			if(i==c) arr.add("X");
 			else arr.add(String.valueOf(i));
@@ -137,7 +137,7 @@ public class TbyT_Game {
 			
 			boolean clear = false;
 			
-			for(int i = 5 ; i > 0; i--) {
+			for(int i = 100 ; i > 0; i--) {
 				System.out.println("[남은횟수 : "+i+"]");
 				tg.map();
 				System.out.println("[명령어] a:Right d:left s:up w:down x:exit");

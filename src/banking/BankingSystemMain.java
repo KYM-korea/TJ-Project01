@@ -66,14 +66,14 @@ public class BankingSystemMain {
 					am.SaveD(as);
 					break;
 				case ICustomDefine.GAME_START:
-//					System.out.println("[게임 난이도]");
-//					System.out.println("[1]초급(3x3)  [2]중급(4x4)  [3]고급(5x5)");
-//					System.out.print("[선택] >> "); int diff = sc.nextInt();
-//					if(diff < 0 || diff > 3) {
-//						MenuSelectException mse = new MenuSelectException();
-//						throw mse;
-//					}
-					TbyT_Game ttg = new TbyT_Game(1);
+					System.out.println("[게임 난이도]");
+					System.out.println("[1]초급(3x3)  [2]중급(4x4)  [3]고급(5x5)");
+					System.out.print("[선택] >> "); int diff = sc.nextInt();
+					if(diff < 0 || diff > 3) {
+						MenuSelectException mse = new MenuSelectException();
+						throw mse;
+					}
+					TbyT_Game ttg = new TbyT_Game(diff);
 					ttg.Start(ttg);;
 					break;
 				case ICustomDefine.EXIT:
