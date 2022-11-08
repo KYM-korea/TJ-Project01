@@ -21,6 +21,8 @@ public class BankingSystemMain {
 		System.out.println("큰론 이후 작업 01");
 		System.out.println("pull없이 작업진행");
 		
+		System.out.println("클론 이후 작업 01");
+		
 		Scanner sc = new Scanner(System.in);
 		AccountManager am = new AccountManager();
 		AutoSaver as = new AutoSaver(am);
