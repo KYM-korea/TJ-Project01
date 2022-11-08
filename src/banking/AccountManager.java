@@ -83,7 +83,7 @@ public class AccountManager {
 				if(ac.add(na)) {
 					ac.add(na);
 				}else {
-					System.out.println("[중복된 계좌 발견]\n[덮어쓰기 (Y/N)]");
+					System.err.println("[중복된 계좌 발견]\n[덮어쓰기 (Y/N)]");
 					String check_id=sc1.nextLine();
 					if(check_id.substring(0, 1).equalsIgnoreCase("Y")) {
 						ac.remove(na);
